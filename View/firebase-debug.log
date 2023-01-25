@@ -1,0 +1,84 @@
+[debug] [2022-04-27T12:19:02.390Z] ----------------------------------------------------------------------
+[debug] [2022-04-27T12:19:02.391Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ataka\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-27T12:19:02.391Z] CLI Version:   10.7.1
+[debug] [2022-04-27T12:19:02.392Z] Platform:      win32
+[debug] [2022-04-27T12:19:02.392Z] Node Version:  v16.14.2
+[debug] [2022-04-27T12:19:02.392Z] Time:          Wed Apr 27 2022 15:19:02 GMT+0300 (GMT+03:00)
+[debug] [2022-04-27T12:19:02.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-27T12:19:02.397Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-27T12:19:02.397Z] > authorizing via signed-in user (atakan.serce2@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Ataka\OneDrive\Masaüstü\Main Website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2022-04-27T12:19:32.768Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-27T12:19:32.769Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-27T12:19:32.984Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 27 Apr 2022 12:19:31 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-27T12:19:32.996Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"ATAKANSERCE","name":"ATAKANSERCE"}
+[debug] [2022-04-27T12:19:33.968Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Wed, 27 Apr 2022 12:19:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=787","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-27T12:19:33.968Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2022-04-27T12:19:33.970Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at module.exports (C:\Users\Ataka\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:47:12)
+    at Request._callback (C:\Users\Ataka\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\Ataka\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:526:28)
+    at Request.emit (node:domain:475:12)
+    at Request.<anonymous> (C:\Users\Ataka\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:526:28)
+    at Request.emit (node:domain:475:12)
+    at IncomingMessage.<anonymous> (C:\Users\Ataka\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:645:28)
+    at IncomingMessage.emit (node:events:538:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2022-04-27T12:20:06.358Z] ----------------------------------------------------------------------
+[debug] [2022-04-27T12:20:06.359Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ataka\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2022-04-27T12:20:06.359Z] CLI Version:   10.7.1
+[debug] [2022-04-27T12:20:06.359Z] Platform:      win32
+[debug] [2022-04-27T12:20:06.359Z] Node Version:  v16.14.2
+[debug] [2022-04-27T12:20:06.360Z] Time:          Wed Apr 27 2022 15:20:06 GMT+0300 (GMT+03:00)
+[debug] [2022-04-27T12:20:06.360Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=1043892753&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=atakan.serce2%40gmail.com
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-04-27T12:20:14.455Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2022-04-27T12:20:14.455Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"2f7e702c-923f-49aa-b383-e60f3523eddd"}
+[debug] [2022-04-27T12:20:14.971Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2022-04-27T12:20:14.971Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"z8AMGp0me_LKQvIaXlbySwFMwLMCiZn_7iCclwyiZFc"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    2F7E7
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=jI3cKSi-xXVKD0SExctlyeP8QGonXqCU4bCe5RSZfIE&session=2f7e702c-923f-49aa-b383-e60f3523eddd&attest=z8AMGp0me_LKQvIaXlbySwFMwLMCiZn_7iCclwyiZFc
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
